@@ -1,0 +1,37 @@
+{
+  "name": "period-format",
+  "description": "A module to provide different formats for a period",
+  "version": "0.0.1",
+  "homepage": "https://github.com/gfke/period-format",
+  "bugs": "https://github.com/lukas-zech-software@users.noreply.github.com/period-format/issues",
+  "license": "none",
+  "main": "lib/period-format.js",
+  "author": {
+    "name": "Lukas Zech",
+    "email": "lukas-zech-software@users.noreply.github.com",
+    "url": "https://github.com/gfke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukas-zech-software@users.noreply.github.com/period-format"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-util": "^3.0.1",
+    "gulp-bump": "^0.1.11",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-mocha": "^1.1.0",
+    "gulp-istanbul": "^0.5.0",
+    "should": "^4.0.4",
+    "jshint-stylish": "^0.4.0",
+    "gulp-load-plugins": "^0.6.0",
+    "gulp-plumber": "^0.6.5",
+    "browserify": "^8.1.1",
+    "gulp-browserify": "^0.5.1",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  }
+}
