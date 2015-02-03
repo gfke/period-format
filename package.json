@@ -2,18 +2,21 @@
   "name": "period-format",
   "description": "A module to provide different formats for a period",
   "version": "0.0.1",
-  "homepage": "https://github.com/gfke/period-format",
-  "bugs": "https://github.com/lukas-zech-software@users.noreply.github.com/period-format/issues",
+  "homepage": "https://github.com/gfke/gfk-period-format",
+  "bugs": "https://github.com/lukas-zech-software@users.noreply.github.com/gfk-period-format/issues",
   "license": "none",
-  "main": "lib/period-format.js",
+  "main": "lib/gfk-period-format.js",
   "author": {
     "name": "Lukas Zech",
     "email": "lukas-zech-software@users.noreply.github.com",
     "url": "https://github.com/gfke"
   },
+  "publishConfig": {
+    "registry": "http://dev-spielwiese.media-control.int:1337/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukas-zech-software@users.noreply.github.com/period-format"
+    "url": "https://github.com/lukas-zech-software@users.noreply.github.com/gfk-period-format"
   },
   "dependencies": {
     "minilog": "^2.0.6",
@@ -25,7 +28,7 @@
     "gulp-bump": "^0.1.11",
     "gulp-jscs": "^1.1.2",
     "gulp-jshint": "^1.8.4",
-    "gulp-mocha": "^1.1.0",
+    "gulp-jasmine": "^1.0.0",
     "gulp-istanbul": "^0.5.0",
     "should": "^4.0.4",
     "jshint-stylish": "^0.4.0",

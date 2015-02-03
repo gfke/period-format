@@ -11,7 +11,7 @@ var paths = {
   tests: ['./test/**/*.js', '!test/{temp,temp/**}'],
   source: ['./lib/*.js'],
   build: './build',
-  module: './lib/period-format.js'
+  module: './lib/gfk-period-format.js'
 };
 
 var filenames = {
@@ -65,6 +65,11 @@ gulp.task('browserify', function () {
     .pipe(gulp.dest(paths.build));
 });
 
+gulp.task('unitTest', function () {
+    gulp.src(paths.tests, {cwd: __dirname})
+        .pipe(plugins.plumber(plumberConf))
+        .pipe(plugins.jasmine(/*{verbose:true,includeStackTrace:true}*/));
+});
 
 gulp.task('bump', ['test'], function () {
   var bumpType = plugins.util.env.type || 'patch'; // major.minor.patch
@@ -78,7 +83,7 @@ gulp.task('watch', ['test'], function () {
   gulp.watch(paths.watch, ['test']);
 });
 
-gulp.task('test', ['lint', 'istanbul']);
+gulp.task('test', ['lint', 'unitTest']);
 
 gulp.task('release', ['bump']);
 
